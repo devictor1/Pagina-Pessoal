@@ -1,0 +1,49 @@
+body {
+    background-color: #4caf50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    margin: 0 100px 0 0;
+    text-align: center;
+    flex-direction: row;
+}
+
+.texto p{
+    font: 18px sans-serif;;
+    line-height: 130%;
+}
+.texto h1 {
+    font-size: 50px;
+    line-height: 80%;
+
+}
+.texto h2 {
+    font-size: 30px;
+}
+
+.bloco1 {
+    margin-right: -9%;
+}
+.bloco1 a{
+    text-decoration: underline;
+    color: black;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+a:hover{
+    color: yellow;
+}
+
+.bloco2 {
+    line-height: 140%;
+    display: flex;
+}
+
+.container img {
+    transform: rotate(-90deg);
+    object-fit: cover;
+    margin-top: 10px;
+    clip-path: inset(13% 13% 20% 25%);
+
+}
