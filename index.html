@@ -12,9 +12,14 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="img/luz-acesa.png" type="image/png">
     <title>Página pessoal</title>
+    <script src="https://www.google.com/jsapi?key=YOUR_API_KEY"></script>
+    <script src="script/script.js"></script>
 </head>
 <body>
-    <header><h1>Seja bem-vindo à minha página pessoal!</h1></header>
+    <header>
+        <button id="translate-button" onclick="translateText('en')"><img src="img/google-translate.png" alt="Google Translate Icon">Translate to English</button>
+        <h1>Seja bem-vindo à minha página pessoal!</h1>
+    </header>
     <section class="section1">
     <section class="bloco1">
         <a href="https://github.com/devictor1">Victor F. Gogorza</a>
@@ -24,14 +29,19 @@
         </div>
     </section>
         <section class="bloco2">
-        <div class="texto"><h1>Oi, sou o Victor!</h1><br>
+        <div class="texto"><h2>Oi, eu sou o Victor!</h2><br>
         <p>Meu nome é Victor Fregni Gogorza e atualmente estou no último semestre do curso de Análise e Desenvolvimento de Sistemas. Não sei qual a minha comida favorita, mas por enquanto está entre Strogonoff, Pizza ou Lasanha. Nunca pulei de paraquedas e já quebrei o pulso.</p><br>
-        <h2>Hobbies e interesses</h2>
         <p>Atualmente eu estudo Japonês e jogo tênis de mesa, gosto muito de ler, além de cozinhar e jogar no pc. Aspiro ser um bom programador que consegue se adaptar aos problemas que aparecem, me mantendo flexível no pensamento.</p>
         <p> Gosto muito de assistir o Neil deGrasse Tyson falar sobre o universo e os problemas que as novas descobertas vêm apresentando ao saber dos nossos antepassados.</p>
-    </div>
+        </div>
         </section>
     </section>
+    <section class="section2">
+        <h2>Headline</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec id elit non mi porta gravida at eget metus.</p>
+        <button>Learn More →</button>
+      </section>
     <section class="section3">
         <h2>Me mande uma mensagem!</h2>
         <form action="" method="get">
