@@ -7,33 +7,44 @@
     <meta name="robots" content="index, all">
     <meta name="author" content="Victor Fregni Gogorza">
     <meta name="date" content="August 2024">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="icons/luz-acesa.png" type="image/png">
+    <meta name="keywords" content="Victor, Fregni, Gogorza, contato, desenvolvedor, portfolio">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/luz-acesa.png" type="image/png">
     <title>Página pessoal</title>
 </head>
 <body>
+    <header><h1>Seja bem-vindo à minha página pessoal!</h1></header>
+    <section class="section1">
     <section class="bloco1">
         <a href="https://github.com/devictor1">Victor F. Gogorza</a>
         <br><br>
         <div class="container">
-            <img src="img/imgVictor.png" alt="Na parte esquerda da página, uma foto do programador que a fez, Victor Fregni, com uma mão no queixo e outra em seu cotovelo olhando para o lado, em fundo verde.">
+            <img src="img/imgVictor.png" alt="Ao lado do texto, uma foto do programador que programou a página, Victor Fregni, com uma mão no queixo e outra em seu cotovelo olhando para o lado, em fundo verde.">
         </div>
     </section>
-    <main>
-        <div class="bloco2">
-        <div class="texto"><h1>Seja bem-vindo à minha página pessoal!</h1>
-        <p>Meu nome é Victor Fregni Gogorza e atualmente estou no último semestre do curso de Análise e Desenvolvimento de Sistemas.<br>
-        Tenho medo das incertezas da vida porém continuo seguindo em frente porque isso é viver.
-        Não sei qual a minha comida favorita porque tem muita coisa boa no mundo que eu já comi e tantas outras que não provei, mas por enquanto está entre Strogonoff, Pizza ou Lasanha.
-        Não sei tricotar e gosto de comida italiana.</p>
+        <section class="bloco2">
+        <div class="texto"><h1>Oi, sou o Victor!</h1><br>
+        <p>Meu nome é Victor Fregni Gogorza e atualmente estou no último semestre do curso de Análise e Desenvolvimento de Sistemas. Não sei qual a minha comida favorita, mas por enquanto está entre Strogonoff, Pizza ou Lasanha. Nunca pulei de paraquedas e já quebrei o pulso.</p><br>
         <h2>Hobbies e interesses</h2>
-        <p>Atualmente eu estudo Japonês e jogo tênis de mesa, gosto muito de ler e jogar basquete, além de cozinhar e jogar no pc.
-        Aspiro ser um bom programador que consegue se adaptar aos problemas que aparecem, me mantendo flexível no pensamento.<br>
-        Gosto muito de assistir o Neil deGrasse Tyson falar sobre o universo e os problemas que as novas descobertas vêm apresentando ao saber dos nossos antepassados.
-        </p>
+        <p>Atualmente eu estudo Japonês e jogo tênis de mesa, gosto muito de ler, além de cozinhar e jogar no pc. Aspiro ser um bom programador que consegue se adaptar aos problemas que aparecem, me mantendo flexível no pensamento.</p>
+        <p> Gosto muito de assistir o Neil deGrasse Tyson falar sobre o universo e os problemas que as novas descobertas vêm apresentando ao saber dos nossos antepassados.</p>
     </div>
-        </div>
-    </main>
+        </section>
+    </section>
+    <section class="section3">
+        <h2>Me mande uma mensagem!</h2>
+        <form action="" method="get">
+            <label for="name">Nome:</label>
+            <input type="text" name="nome" id="nome">
+            <label for="surname">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="sobrenome">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email">
+            <textarea name="texto" id="texto" maxlength="1024" placeholder="Escreva sua mensagem:"></textarea>
+            <button type="submit" id="button">Enviar mensagem</button> 
+        </form>
+    </section>
 </body>
 <footer> 
     <p>
