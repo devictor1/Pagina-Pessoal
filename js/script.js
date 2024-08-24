@@ -1,26 +1,15 @@
-async function translateText(lang) {
-  const textElements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, li, span');
-
-  for (const element of textElements) {
-    const text = element.textContent;
-    const translation = await translateWithGoogleAPI(text, lang);
-
-    element.textContent = translation;
-  }
+function googleTranslateElementInit() {
+  // Initialize the Google Translate API
+  google.translate.load('en');
 }
 
-async function translateWithGoogleAPI(text, lang) {
-  const response = await fetch(`https://translation.googleapis.com/language/translate/v2?key=YOUR_API_KEY`, {
-    method: 'POST',
-    body: JSON.stringify({
-      q: text,
-      target: lang,
-    }),
-    headers: {
-      'Content-Type': 'application/json',
-    },
+function translateText(language) {
+  // Get the text to translate
+  var text = document.getElementById('texto').value;
+  
+  // Translate the text using the Google Translate API
+  google.translate(text, language, function(result) {
+    // Display the translated text
+    document.getElementById('translated-text').innerHTML = result;
   });
-
-  const data = await response.json();
-  return data.data.translations[0].translatedText;
 }
