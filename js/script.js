@@ -1,15 +1,8 @@
 function googleTranslateElementInit() {
-  // Initialize the Google Translate API
-  google.translate.load('en');
+  new google.translate.TranslateElement({
+    pageLanguage: 'pt',
+    layout: google.translate.TranslateElement.VerticalLayout,
+    autoDisplay: true
+  }, 'google-translate-element');
 }
-
-function translateText(language) {
-  // Get the text to translate
-  var text = document.getElementById('texto').value;
-  
-  // Translate the text using the Google Translate API
-  google.translate(text, language, function(result) {
-    // Display the translated text
-    document.getElementById('translated-text').innerHTML = result;
-  });
-}
+document.addEventListener('DOMContentLoaded', googleTranslateElementInit);
